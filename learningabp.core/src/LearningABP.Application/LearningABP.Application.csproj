@@ -16,4 +16,7 @@
   <ItemGroup>
     <ProjectReference Include="..\LearningABP.Core\LearningABP.Core.csproj" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="People\" />
+  </ItemGroup>
 </Project>

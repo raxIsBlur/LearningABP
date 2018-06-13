@@ -17,9 +17,10 @@ using System;
 namespace LearningABP.Migrations
 {
     [DbContext(typeof(LearningABPDbContext))]
-    partial class LearningABPDbContextModelSnapshot : ModelSnapshot
+    [Migration("20180613064657_Initial")]
+    partial class Initial
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
