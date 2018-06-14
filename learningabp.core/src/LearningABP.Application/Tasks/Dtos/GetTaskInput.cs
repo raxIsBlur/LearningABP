@@ -6,5 +6,7 @@ namespace LearningABP.Tasks.Dtos
 {
     public class GetTaskInput
     {
+        public TaskState? State { get; set; }
+        public int? AssignedPersonId { get; set; }
     }
 }

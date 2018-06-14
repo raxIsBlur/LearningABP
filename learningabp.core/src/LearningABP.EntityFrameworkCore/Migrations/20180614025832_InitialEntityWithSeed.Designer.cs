@@ -17,8 +17,8 @@ using System;
 namespace LearningABP.Migrations
 {
     [DbContext(typeof(LearningABPDbContext))]
-    [Migration("20180613064657_Initial")]
-    partial class Initial
+    [Migration("20180614025832_InitialEntityWithSeed")]
+    partial class InitialEntityWithSeed
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
