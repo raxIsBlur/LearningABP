@@ -5,13 +5,13 @@ using LearningABP.Editions;
 using LearningABP.MultiTenancy;
 using LearningABP.People;
 
-namespace LearningABP.EntityFrameworkCore.Seed.Tenants
+namespace LearningABP.EntityFrameworkCore.Seed.People
 {
-    public class DefaultPeople
+    public class DefaultPeopleCreator
     {
         private readonly LearningABPDbContext _context;
 
-        public DefaultPeople(LearningABPDbContext context)
+        public DefaultPeopleCreator(LearningABPDbContext context)
         {
             _context = context;
         }

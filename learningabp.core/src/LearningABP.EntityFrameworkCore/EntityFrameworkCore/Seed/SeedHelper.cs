@@ -7,6 +7,8 @@ using Abp.EntityFrameworkCore.Uow;
 using Abp.MultiTenancy;
 using LearningABP.EntityFrameworkCore.Seed.Host;
 using LearningABP.EntityFrameworkCore.Seed.Tenants;
+using LearningABP.EntityFrameworkCore.Seed.People;
+using LearningABP.EntityFrameworkCore.Seed.Tasks;
 
 namespace LearningABP.EntityFrameworkCore.Seed
 {
@@ -28,8 +30,8 @@ namespace LearningABP.EntityFrameworkCore.Seed
             new DefaultTenantBuilder(context).Create();
             new TenantRoleAndUserBuilder(context, 1).Create();
 
-            new DefaultPeople(context).Create();
-            //new InitialTasks(context).Create();
+            new PeopleBuilder(context).Create();
+            //new TasksBuilder(context).Create();
         }
 
         private static void WithDbContext<TDbContext>(IIocResolver iocResolver, Action<TDbContext> contextAction)

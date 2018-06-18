@@ -6,13 +6,13 @@ using LearningABP.MultiTenancy;
 using LearningABP.People;
 using LearningABP.Tasks;
 
-namespace LearningABP.EntityFrameworkCore.Seed.Tenants
+namespace LearningABP.EntityFrameworkCore.Seed.Tasks
 {
-    public class InitialTasks
+    public class DefaultTasksCreator
     {
         private readonly LearningABPDbContext _context;
 
-        public InitialTasks(LearningABPDbContext context)
+        public DefaultTasksCreator(LearningABPDbContext context)
         {
             _context = context;
         }
